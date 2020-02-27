@@ -1,0 +1,152 @@
+                                /* initize set */
+body{
+    margin:0;
+    padding:0;
+    height:1000px;
+}
+#top{
+    height:40%;
+}
+#middle{
+    height:50%;
+}
+#bottom{
+    height:10%;
+    background-color: rgb(236, 236, 230);
+}
+                                /* frame */
+#middle_body_section{
+    height:80%; 
+    width:95%; 
+    margin:2%;
+    
+}
+#grid{
+    display: grid;
+    display:-ms-grid;
+    height:90%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 50% 50%;
+}
+#left_body_part{
+    grid-column: 1;
+    -ms-grid-column: 1;
+    height:340px;
+    position: relative;
+    margin:10px;
+    background-color: rgb(236, 228, 228,0.8);
+    background-color: #CCC6C6;
+    opacity: 0.8;
+    
+}
+
+#right_body_part{
+    margin:10px;
+    -ms-grid-column: 2;
+    position: relative;
+    background-color: rgb(236, 228, 228,0.8);
+    background-color: #CCC6C6;
+    opacity: 0.8;
+    
+}
+#recipe{
+    height:300px;
+    overflow:auto;
+}
+#totalAmount{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+                                    /* background */
+body{
+    background-image: url("../image/main_background.jpg");
+     background-repeat: no-repeat;
+    background-size: 100%;
+}
+#top{
+    background-image: url("../image/top_background.jpg");
+    background-repeat: no-repeat;
+    /* background-size:100% 100%; */
+    /* animation-name: e;
+    animation-duration: 2s;
+    -ms-animation-name:e;
+    -ms-animation-duration: 2s; */
+    
+}
+#middle{
+    background-image: url("../image/middle_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+                                               /* element */
+#mainSelect{
+    text-align:center;
+}
+select{
+    height:30px;
+    width:80%;
+    padding:0.2%;
+    margin:0;
+    background:whitesmoke;
+    color:rgb(92, 85, 85);
+    border-radius: 2%;
+    border:solid 1px white;
+    outline:none;
+    margin:5px;
+    text-align-last:center;
+}
+option{
+    background:whitesmoke;
+    color:rgb(92, 85, 85);
+    border:solid 1px white;
+}
+option:hover{
+    background-color:gainsboro;
+}
+button{
+    background:whitesmoke;
+    color:rgb(116, 110, 110);
+    border:solid 1px white;
+    height:30px;
+    border-radius: 35px;
+}
+button:hover{
+    background-color: rgb(230, 223, 223);
+}
+#button{
+    position: absolute;
+    bottom:2%;
+    left:4%;
+
+}
+#clear_button{
+    position: absolute;
+    bottom:0;
+    right:4%;
+    bottom:2%;
+}
+#copyright{
+    position: relative;
+    text-align:center;
+    top:70%;
+    color:gray;
+}
+#heading{
+    color:rgba(255, 255, 255, 0.952);
+    text-align:center;
+    font-size:140%;
+    margin:0 auto;
+    padding-top:2%;
+}
+                            /* animation */
+
+@keyframes e{
+    from{background-size:1px 1px;}
+    to{background-size:100% 100%;}
+}
+
+@-ms-keyframes e{
+    from{background-size:1px 1px;}
+    to{background-size:100% 100%;}
+}
